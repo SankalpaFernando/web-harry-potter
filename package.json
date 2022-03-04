@@ -1,0 +1,31 @@
+{
+  "name": "web",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@mantine/core": "^3.6.13",
+    "@mantine/hooks": "^3.6.13",
+    "@mantine/notifications": "^3.6.13",
+    "@modulz/radix-icons": "^4.0.0",
+    "@reduxjs/toolkit": "^1.8.0",
+    "lodash": "^4.17.21",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.6",
+    "sass": "^1.49.9"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.179",
+    "@types/react": "^17.0.33",
+    "@types/react-dom": "^17.0.10",
+    "@types/react-redux": "^7.1.23",
+    "@vitejs/plugin-react": "^1.0.7",
+    "typescript": "^4.5.4",
+    "vite": "^2.8.0"
+  }
+}

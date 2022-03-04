@@ -1,0 +1,64 @@
+:root { --time: 0.707s }
+
+.cards {
+  display: grid;
+}
+
+.card {
+  perspective: 40rem;
+  transition: transform calc(var(--time) / 4);
+  text-decoration: none;
+  color: inherit;
+  width: 70%;
+  margin:auto;
+  height: 20rem !important;
+  align-items: center;
+  justify-content: center;
+  &:active {
+    transform: scale(0.975);
+  }
+}
+
+.card-body {
+  transform-style: preserve-3d;
+  transition: var(--time) transform;
+  border-radius: 0.25rem;
+  height: 20rem !important;
+
+  flex: 1;
+  .card:hover & {
+    transform: rotateY(-180deg);
+    cursor: pointer;
+  }  
+}
+
+.card-front, .card-back {
+  backface-visibility: hidden;
+  @extend .shadow;
+  display: flex;
+  height: 20rem !important;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+}
+.card-front{
+  padding: 1.5rem;
+}
+.card-back {
+  position: absolute;
+  width: 100% !important;
+  border:.7rem solid #620507e1;
+  top: 0; right: 0; bottom: 0; left: 0;
+  transform: rotateY(-180deg);
+  justify-content: left;
+}
+
+.shadow {
+  box-shadow: 0 -1px 1px rgba(0,0,0,0.04), 
+              0 2px 2px rgba(0,0,0,0.04), 
+              0 4px 4px rgba(0,0,0,0.04), 
+              0 8px 8px rgba(0,0,0,0.04),
+              0 16px 16px rgba(0,0,0,0.04); 
+}
