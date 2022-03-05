@@ -7,8 +7,8 @@ export interface ICharacter {
   totalPages: number;
   page: number;
 }
-console.log(import.meta.env)
-const { VITE_APP_BASE_URL:baseUrl } = import.meta.env;
+
+const { VITE_APP_BASE_URL: baseUrl } = import.meta.env;
 
 export const HarryPotterApi = createApi({
   reducerPath: 'HarryPotterApi',
