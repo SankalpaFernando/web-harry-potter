@@ -13,6 +13,7 @@
     "@mantine/notifications": "^3.6.13",
     "@modulz/radix-icons": "^4.0.0",
     "@reduxjs/toolkit": "^1.8.0",
+    "dotenv": "^16.0.0",
     "lodash": "^4.17.21",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -20,6 +21,7 @@
     "sass": "^1.49.9"
   },
   "devDependencies": {
+    "@types/dotenv": "^8.2.0",
     "@types/lodash": "^4.14.179",
     "@types/react": "^17.0.33",
     "@types/react-dom": "^17.0.10",

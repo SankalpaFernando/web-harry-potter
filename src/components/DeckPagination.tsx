@@ -6,10 +6,10 @@ import { setCurrentPage } from '../redux/util.reducer'
 
 const DeckPagination: React.FC = () => {
   const dispatch = useDispatch();
-  const {totalPages} = useSelector((state: RootState) => state.util.pages);
+  const {totalPages,currentPage} = useSelector((state: RootState) => state.util.pages);
   return (
     <div style={{display:"flex",justifyContent:"center",margin:"6rem 0"}}>
-      <Pagination onChange={(page)=>dispatch(setCurrentPage(page))} size="lg" radius="xl" total={totalPages} />
+      <Pagination page={currentPage} onChange={(page)=>dispatch(setCurrentPage(page))} size="lg" radius="xl" total={totalPages} />
     </div>
   )
 }
