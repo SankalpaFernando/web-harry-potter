@@ -8,7 +8,7 @@ const DeckPagination: React.FC = () => {
   const dispatch = useDispatch();
   const {totalPages,currentPage} = useSelector((state: RootState) => state.util.pages);
   return (
-    <div style={{display:"flex",justifyContent:"center",margin:"6rem 0"}}>
+    <div style={{display:"flex",justifyContent:"center",margin:"7rem 0"}}>
       <Pagination page={currentPage} onChange={(page)=>dispatch(setCurrentPage(page))} size="lg" radius="xl" total={totalPages} />
     </div>
   )
